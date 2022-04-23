@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: ingress-vh-routing
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: / # not necessary the ingress works fine whithout this nginx annotation
 spec:
   rules:
   - host: watch.ecom-store.com
