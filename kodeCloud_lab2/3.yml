@@ -20,7 +20,7 @@ spec:
     - name: secret-volume
       mountPath: /etc/secret-volume
       readOnly: true
-  tolerations:
+  tolerations: # the secheduling on the control plane can be done using the spec.nodeName field
   - key: "node-role.kubernetes.io/master"
     operator: "Exists"
     effect: "NoSchedule"
